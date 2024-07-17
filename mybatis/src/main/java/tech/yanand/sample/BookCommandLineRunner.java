@@ -9,7 +9,6 @@ import tech.yanand.sample.book.Book;
 import tech.yanand.sample.book.BookMapper;
 
 import java.time.LocalDate;
-import java.util.Collection;
 import java.util.List;
 
 @Component
@@ -28,7 +27,7 @@ public class BookCommandLineRunner implements CommandLineRunner {
         int result = bookMapper.insertAll(List.of(book1, book2));
         LOG.info("Insert result: {}", result);
 
-        Collection<Book> bookList = bookMapper.selectAll();
+        List<Book> bookList = bookMapper.selectAll();
         LOG.info("Select result: {}", bookList);
     }
 }

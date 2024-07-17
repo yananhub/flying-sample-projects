@@ -17,5 +17,5 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'tech.yanand:flying-cache:0.1.1-beta.3'
+    implementation 'tech.yanand:flying-cache:1.0.0'
 }
